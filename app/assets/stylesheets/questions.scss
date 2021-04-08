@@ -1,0 +1,54 @@
+// Place all the styles related to the Questions controller here.
+$gray: #F4F4F4;
+$white: #fff;
+$lightbrown: #c06014;
+$stronggray: #424642;
+$lightyellow: #fffee1;
+$font-stack: Roboto;
+$h1size: 24px;
+$psize: 16px;
+
+body {
+  background: $gray;
+  font: 100% $font-stack;
+}
+
+.container {
+  background: $white;
+  width: 40vw;
+  border: 1px solid black;
+  margin: 48px auto;
+  padding: 16px 16px 32px 16px;
+  h1 {
+    font-size: $h1size;
+    color: $lightbrown;
+    margin-left: 16px;
+  }
+  p {
+    font-size: $psize;
+    color: $stronggray;
+    margin-left: 16px;
+  }
+  form {
+    margin-left: 16px;
+    .question {
+      width: 400px / 536px * 100%;
+      height: 32px;
+    }
+    .btn {
+      width: 120px / 536px * 100%;
+      height: 38px;
+    }
+  }
+  .client, .coach {
+    margin: 0 0 16px 16px;
+    padding: 1px 24px;
+    border-left: 10px solid $gray;
+  }
+  .coach {
+    background: $lightyellow;
+  }
+}
+
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
